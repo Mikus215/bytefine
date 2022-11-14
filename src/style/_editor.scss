@@ -1,0 +1,112 @@
+.editor{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    flex: 1;
+    width: 100%;
+}
+
+.editor__header, .editor__reset, .editor__logo-title{
+    display: flex;
+    align-items: center;
+}
+
+.editor__header{
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.editor__title{
+    font-size: 32px;
+    margin-left: 1rem;
+    color: $neutralBlack75;
+}
+
+.editor__reset{
+    position: relative;
+    color: red;
+    span{
+        margin-right: .5rem;
+    }
+    button{
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 105%;
+        background-color: red;
+        bottom: 0;
+    }
+}
+
+.editor__add-content{
+    background-color: $backgroundWhite97;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 72px;
+}
+
+.editor__container{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.editor__box{
+    background-color: $backgroundWhite97;
+    width: 365px;
+    height: 256px;
+    border-radius: 10px;
+    transition: background-color .3s;
+
+    &:hover{
+        background-color: $neutralBlack25;
+    }
+    &:focus{
+        background-color: $backgroundWhite97;
+    }
+}
+
+.editor__box-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.editor__option{
+    position: relative;
+    top: 55px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.editor__export-btn{
+    background: $palleteDarkPrimary;
+    border: none;
+    color: $backgroundWhite98;
+    border-radius: 5px;
+    padding: .5rem 1.8rem;
+    font-weight: 600;
+    margin-top: auto;
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.editor__picture{
+    display: none;
+}
+
+.editor__picture-label{
+    cursor: pointer;
+}

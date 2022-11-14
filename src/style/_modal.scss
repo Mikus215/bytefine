@@ -1,0 +1,76 @@
+.modal__body{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  z-index: 1000;
+  width: 643px;
+  height: 584px;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1000;    
+}
+
+.modal__close{
+    margin-left: auto;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.modal__warning-sign{
+    max-width: 217px;
+    margin: 1rem auto;
+}
+
+.modal__warning-sign-title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2rem 0 .7rem 0;
+    color: $neutralBlack100;
+}
+
+.modal__warning-sign-description{
+    text-align: center;
+    font-weight: 500;
+    color: $neutralBlack75;
+    padding: 0 4rem;
+}
+
+.modal__button-box{
+    margin-top: 2.6rem;
+    display: flex;
+    justify-content: center;
+    gap: .3rem;
+}
+
+.modal__button{
+    border: none;
+    background: none;
+    font-weight: 500;
+    color: $neutralBlack100;
+    font-family: Poppins;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.modal__button--reset{
+    color: $neutralWhite;
+    background: $palleteDarkPrimary;
+    border-radius: 5px;
+    padding: .5rem 2rem;
+}
